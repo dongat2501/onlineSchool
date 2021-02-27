@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +15,14 @@ html, body, p, input, h1, h2, h3, h4, h5 {
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+}
+
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+
+select:focus, button:focus, input:focus {
+    outline: none;
 }
 
 .white-bg {
@@ -47,6 +57,23 @@ html, body, p, input, h1, h2, h3, h4, h5 {
     border-radius: 10px;
 }
 
+.center-bottom {
+    display: inline-block;
+    position: relative;
+}
+
+.center-bottom::after {
+    content: '';
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1728C2;
+    border-radius: 10px;
+}
+
 .flex-between {
     justify-content: space-between;
 }
@@ -62,6 +89,14 @@ html, body, p, input, h1, h2, h3, h4, h5 {
 
 .flex-align-center {
     align-items: center;
+}
+
+.flex-align-bottom {
+    align-items: flex-end;
+}
+
+.flex-right {
+    justify-content: flex-end;
 }
 
 .transition {
@@ -87,6 +122,10 @@ html, body, p, input, h1, h2, h3, h4, h5 {
     margin-right: 30px;
 }
 
+.mb-25 {
+    margin-bottom: 25px;
+}
+
 .h-100 {
     height: 100%;
 }
@@ -103,6 +142,11 @@ html, body, p, input, h1, h2, h3, h4, h5 {
     font-size: 14px;
     font-weight: 500;
     color: #666;
+}
+
+.p-meidum {
+    font-size: 15px;
+    line-height: 1.25;
 }
 
 .large-p {
@@ -131,7 +175,7 @@ html, body, p, input, h1, h2, h3, h4, h5 {
 .tab-name {
     font-size: 18px;
     font-weight: 700;
-    line-height: 30/24;
+    line-height: 1.25;
     letter-spacing: -0.69px;
 }
 @media screen and (min-width: 768px) {
@@ -272,6 +316,22 @@ img {
     }
 }
 
+.price-title {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+    .price-title {
+        font-size: 43px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .price-title {
+        font-size: 46px;
+    }
+}
+
 .multi-tab-heading, .three-up, .two-up-container {
     margin-bottom: 50px;
 }
@@ -305,6 +365,23 @@ img {
 @media screen and (min-width: 1200px) {
     .title {
         font-size: 30px;
+    }
+}
+
+.meidum-title {
+    font-size: 24px;
+    line-height: 1.75;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .medium-title {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .medium-title {
+        font-size: 28px;
     }
 }
 
@@ -769,6 +846,7 @@ img {
 
 .filter-icon {
     width: 24px;
+    min-width: 24px;
     margin-right: 8px;
 }
 
@@ -874,20 +952,145 @@ img {
   }
 
   .gray-bg {
-      background: #ededed;
+    background: #ededed;
+  }
+
+  .gray-text {
+      color: #666;
+  }
+
+  .line-through {
+      text-decoration: line-through;
   }
 
   .pangination-number {
-      margin: 0 10px;
+    margin: 0 10px;
   }
 
   .btn-circle {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 2px solid #FF6609;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #FF6609;
   }
 
   .pangination {
-      padding: 50px 0 0;
+    padding: 50px 0 0;
+  }
+
+  .hero-banner {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .img-element {
+    width: 100%;
+    max-width: 108px;
+  }
+
+  .select-arrow {
+    height: 60px;
+    margin-bottom: 10px;
+    padding-right: 12px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #FF660A;
+    box-shadow: 0px 16px 16px rgba(50, 50, 71, 0.08), 0px 24px 32px rgba(50, 50, 71, 0.08);  
+  }
+
+  .select-arrow select {
+      flex: 1;
+      height: 100%;
+      padding: 12px;
+      border: none;
+      font-weight: 600;
+  }
+
+  .select-arrow i {
+    color: #999;
+}
+
+.card-group-heading {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.card-two-des {
+    margin-bottom: 30px;
+}
+
+.card-two-row {
+    margin-bottom: 30px;
+}
+
+.icon-card {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.youtube-video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-block {
+      margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .video-block {
+        margin-bottom: 0;
+    }
+  }
+
+  .card-item-row {
+      margin-bottom: 10px;
+  }
+
+  .card-sub-name {
+      margin-bottom: 25px;
+  }
+
+  .card-name {
+      font-weight: 700;
+      text-align: center;
+  }
+
+  .btn-register {
+    width: 205px;
+    height: 45px;
+    background: #fff0e6;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-register:hover {
+      background: #FF660A;
+      color: #fff !important;
+  }
+
+  .card-four-up {
+      padding: 20px;
+      background: #fff;
+      border-radius: 26px;
   }
