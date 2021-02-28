@@ -21,6 +21,10 @@ html, body, p, input, h1, h2, h3, h4, h5 {
     font-family: 'Lobster', cursive;
 }
 
+button {
+    cursor: pointer;
+}
+
 select:focus, button:focus, input:focus {
     outline: none;
 }
@@ -646,6 +650,22 @@ img {
     border-radius: 10px;
 }
 
+.chemistry .cta {
+    background: #00C1C4;
+}
+
+.chemistry .cta-btn {
+    color: #00C1C4;
+}
+
+.physical .cta {
+    background: #9B51E0;
+}
+
+.physical .cta-btn {
+    color: #9B51E0;
+}
+
 .cta-btn {
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -659,7 +679,7 @@ img {
 
 .cta-btn:hover {
     background-color: #fa8339;
-    color: #fff;
+    color: #fff !important;
 }
 
 .cta-title {
