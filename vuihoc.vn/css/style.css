@@ -738,6 +738,14 @@ img {
     border-bottom-left-radius: 50px;
 }
 
+.tab-right-content {
+    display: none;
+}
+
+.tab-right-content.active-content {
+    display: block;
+}
+
 .card-two-icon {
     position: relative;
 }
