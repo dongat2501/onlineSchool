@@ -220,12 +220,32 @@ select:focus, button:focus, input:focus {
     font-size: 13px;
 }
 
+.tab-column-left {
+    position: relative;
+}
+
 .tab-items {
     padding-top: 15px;
     padding-bottom: 15px;
     color: #999;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
+}
+
+.nav-three {
+    width: calc(100vw - 30px);
+    max-width: 800px;
+    padding:  25px 5px 5px 25px;
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .nav-three {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background: #fff;
+        z-index: 3;
+    }
 }
 
 .tab-items.tab-active {
@@ -235,6 +255,11 @@ select:focus, button:focus, input:focus {
 .tab-items:hover .tab-name,
 .tab-items:hover i {
     color: #FF660A;
+}
+
+.tab-items:hover .nav-three,
+.tab-items.tab-active .nav-three {
+    display: block;
 }
 
 .app-shop {
@@ -410,12 +435,12 @@ img {
     font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-    .title {
+    .sub-title {
         font-size: 18px;
     }
 }
 @media screen and (min-width: 1200px) {
-    .title {
+    .sub-title {
         font-size: 20px;
     }
 }
@@ -893,7 +918,8 @@ img {
 }
 
 .list-grid {
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-image: url('../img/bgTest.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -906,6 +932,10 @@ img {
 .border-bt {
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
 }
 
 .container-checkbox {
@@ -1016,6 +1046,10 @@ img {
       color: #666;
   }
 
+  .black-text {
+      color: #111;
+  }
+
   .line-through {
       text-decoration: line-through;
   }
@@ -1096,6 +1130,13 @@ img {
     width: 60px;
     min-width: 60px;
     height: 60px;
+    margin-right: 10px;
+}
+
+.icon-card-small {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
