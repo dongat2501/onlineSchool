@@ -198,7 +198,11 @@
                 </h1>
                 <div class="tab-header">
                     <div class="d-flex flex-between">
-                        <div class="tab-row tab-row-active">
+                        <div class="tab-row tab-row-active"
+                            data-class-active="tab-row-active" data-class-access="tab-row"
+                            data-active-content="ctct" data-content-class-active="tab-body-active"
+                            data-active-content-wrapper="tab-body"
+                        >
                             <div class="d-flex flex-align-center">
                                 <span class="multi-tab-icon">
                                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -219,7 +223,10 @@
                                 <h2 class="sub-heading transition multi-tab-title">CHƯƠNG TRÌNH CẤP TỐC</h2>
                             </div>
                         </div>
-                        <div class="tab-row">
+                        <div class="tab-row"
+                        data-class-active="tab-row-active" data-class-access="tab-row"
+                        data-active-content="ctplus" data-content-class-active="tab-body-active"
+                        data-active-content-wrapper="tab-body">
                             <div class="d-flex flex-align-center">
                                 <span class="multi-tab-icon">
                                     <svg width="30" height="34" viewBox="0 0 30 34" fill="none"
@@ -239,7 +246,10 @@
                                 <h2 class="sub-heading transition multi-tab-title">CHƯƠNG TRÌNH 8+</h2>
                             </div>
                         </div>
-                        <div class="tab-row">
+                        <div class="tab-row"
+                        data-class-active="tab-row-active" data-class-access="tab-row"
+                        data-active-content="ctmg" data-content-class-active="tab-body-active"
+                        data-active-content-wrapper="tab-body">
                             <div class="d-flex flex-align-center">
                                 <span class="multi-tab-icon">
                                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -263,8 +273,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-body">
-                    <div class="d-flex">
+                <div class="tab-body ctct tab-body-active">
+                    <div class="d-flex tab-body-content">
                         <div class="flex-center tab-left">
                             <div class="d-flex flex-center tab-left-item tab-left-active tab-item"
                                 data-class-active="tab-left-active" data-class-access="tab-left-item"
@@ -276,6 +286,408 @@
                             <div class="d-flex flex-center tab-left-item tab-item" data-class-active="tab-left-active"
                                 data-class-access="tab-left-item" data-active-content="physical"
                                 data-content-class-active="active-content"
+                                data-active-content-wrapper="tab-right-content">
+                                <span class="tab-left-icon"><img src="img/atom.png" /> </span>
+                                <h3 class="title deep-blue-text tab-title">VẬT LÝ</h3>
+                            </div>
+                            <div class="d-flex flex-center tab-left-item tab-item" data-class-active="tab-left-active"
+                                data-class-access="tab-left-item" data-active-content="chemistry"
+                                data-content-class-active="active-content"
+                                data-active-content-wrapper="tab-right-content">
+                                <span class="tab-left-icon"><img src="img/poison.png" /> </span>
+                                <h3 class="title green-text tab-title">HÓA HỌC</h3>
+                            </div>
+                        </div>
+                        <div class="tab-right">
+                            <!--Math-->
+                            <div class="tab-right-content math active-content">
+                                <div class="row">
+                                    <div class="col-md-7 col-xl-8 d-flex flex-column flex-between">
+                                        <div class="card-two card-two-icon">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardStudent.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA TỰ HỌC MÔN TOÁN</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardLive.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LIVE MÔN TOÁN</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardA.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LUYỆN ĐỀ MÔN TOÁN</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xl-4">
+                                        <div class="cta">
+                                            <img src="img/graphicMath.png" />
+                                            <a href="#" class="sub-title cta-title">CHƯƠNG TRÌNH LUYỆN THI CẤP TỐC TOÀN DIỆN MÔN
+                                                TOÁN</a>
+                                            <p class="cta-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                                                urna, porttitor</p>
+                                            <button class="cta-btn sub-title orange-text transition">XEM CHI
+                                                TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Physical-->
+                            <div class="tab-right-content physical">
+                                <div class="row">
+                                    <div class="col-md-7 col-xl-8 d-flex flex-column flex-between">
+                                        <div class="card-two card-two-icon">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardStudent.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA TỰ HỌC MÔN VẬT LÝ</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardLive.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LIVE MÔN VẬT LÝ</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardA.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LUYỆN ĐỀ MÔN VẬT LÝ</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xl-4">
+                                        <div class="cta">
+                                            <img src="img/ly.png" />
+                                            <a href="#" class="sub-title cta-title">CHƯƠNG TRÌNH LUYỆN THI CẤP TỐC TOÀN DIỆN MÔN
+                                                VẬT LÝ</a>
+                                            <p class="cta-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                                                urna, porttitor</p>
+                                            <button class="cta-btn sub-title transition">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Chemistry-->
+                            <div class="tab-right-content chemistry">
+                                <div class="row">
+                                    <div class="col-md-7 col-xl-8 d-flex flex-column flex-between">
+                                        <div class="card-two card-two-icon">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardStudent.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA TỰ HỌC MÔN HÓA</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardLive.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LIVE MÔN HÓA</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardA.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LUYỆN ĐỀ MÔN HÓA</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xl-4">
+                                        <div class="cta">
+                                            <img src="img/hoa.png" />
+                                            <a href="#" class="sub-title cta-title">CHƯƠNG TRÌNH LUYỆN THI CẤP TỐC TOÀN DIỆN MÔN
+                                                HÓA</a>
+                                            <p class="cta-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                                                urna, porttitor</p>
+                                            <button class="cta-btn sub-title transition">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body ctplus">
+                    <div class="d-flex tab-body-content">
+                        <div class="flex-center tab-left">
+                            <div class="d-flex flex-center tab-left-item tab-left-active tab-item"
+                                data-class-active="tab-left-active" data-class-access="tab-left-item"
+                                data-active-content="math" data-content-class-active="active-content"
+                                data-active-content-wrapper="tab-right-content">
+                                <span class="tab-left-icon"><img src="img/mathsIcon.png" /> </span>
+                                <h3 class="title deep-orange-text tab-title">TOÁN 2</h3>
+                            </div>
+                            <div class="d-flex flex-center tab-left-item tab-item" data-class-active="tab-left-active"
+                                data-class-access="tab-left-item" data-active-content="physical"
+                                data-content-class-active="active-content"
+                                data-active-content-wrapper="tab-right-content">
+                                <span class="tab-left-icon"><img src="img/atom.png" /> </span>
+                                <h3 class="title deep-blue-text tab-title">VẬT LÝ 2</h3>
+                            </div>
+                            <div class="d-flex flex-center tab-left-item tab-item" data-class-active="tab-left-active"
+                                data-class-access="tab-left-item" data-active-content="chemistry"
+                                data-content-class-active="active-content"
+                                data-active-content-wrapper="tab-right-content">
+                                <span class="tab-left-icon"><img src="img/poison.png" /> </span>
+                                <h3 class="title green-text tab-title">HÓA HỌC 2</h3>
+                            </div>
+                        </div>
+                        <div class="tab-right">
+                            <!--Math-->
+                            <div class="tab-right-content math active-content">
+                                <div class="row">
+                                    <div class="col-md-7 col-xl-8 d-flex flex-column flex-between">
+                                        <div class="card-two card-two-icon">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardStudent.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA TỰ HỌC MÔN TOÁN</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardLive.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LIVE MÔN TOÁN</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardA.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LUYỆN ĐỀ MÔN TOÁN</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xl-4">
+                                        <div class="cta">
+                                            <img src="img/graphicMath.png" />
+                                            <a href="#" class="sub-title cta-title">CHƯƠNG TRÌNH LUYỆN THI CẤP TỐC TOÀN DIỆN MÔN
+                                                TOÁN</a>
+                                            <p class="cta-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                                                urna, porttitor</p>
+                                            <button class="cta-btn sub-title orange-text transition">XEM CHI
+                                                TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Physical-->
+                            <div class="tab-right-content physical">
+                                <div class="row">
+                                    <div class="col-md-7 col-xl-8 d-flex flex-column flex-between">
+                                        <div class="card-two card-two-icon">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardStudent.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA TỰ HỌC MÔN VẬT LÝ</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardLive.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LIVE MÔN VẬT LÝ</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardA.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LUYỆN ĐỀ MÔN VẬT LÝ</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xl-4">
+                                        <div class="cta">
+                                            <img src="img/ly.png" />
+                                            <a href="#" class="sub-title cta-title">CHƯƠNG TRÌNH LUYỆN THI CẤP TỐC TOÀN DIỆN MÔN
+                                                VẬT LÝ</a>
+                                            <p class="cta-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                                                urna, porttitor</p>
+                                            <button class="cta-btn sub-title transition">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Chemistry-->
+                            <div class="tab-right-content chemistry">
+                                <div class="row">
+                                    <div class="col-md-7 col-xl-8 d-flex flex-column flex-between">
+                                        <div class="card-two card-two-icon">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardStudent.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA TỰ HỌC MÔN HÓA</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardLive.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LIVE MÔN HÓA</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-two">
+                                            <div class="d-flex flex-align-center">
+                                                <a href="#" class="card-two-img">
+                                                    <img class="w-100" src="img/cardA.png" />
+                                                </a>
+                                                <div class="card-content">
+                                                    <a href="#" class="tab-name card-title">KHÓA LUYỆN ĐỀ MÔN HÓA</a>
+                                                    <p class="large-p card-des">Hỗ trợ toàn diện cho quá trình ôn luyện
+                                                        của các bạn học sinh</p>
+                                                    <p class="p-small red-text card-noti">962 bạn đã đăng kí</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-xl-4">
+                                        <div class="cta">
+                                            <img src="img/hoa.png" />
+                                            <a href="#" class="sub-title cta-title">CHƯƠNG TRÌNH LUYỆN THI CẤP TỐC TOÀN DIỆN MÔN
+                                                HÓA</a>
+                                            <p class="cta-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                                                urna, porttitor</p>
+                                            <button class="cta-btn sub-title transition">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body ctmg">
+                    <div class="d-flex tab-body-content">
+                        <div class="flex-center tab-left">
+                            <div class="d-flex flex-center tab-left-item tab-left-active tab-item"
+                                data-class-active="tab-left-active" data-class-access="tab-left-item"
+                                data-active-content="math" data-content-class-active="active-content"
+                                data-active-content-wrapper="tab-right-content">
+                                <span class="tab-left-icon"><img src="img/mathsIcon.png" /> </span>
+                                <h3 class="title deep-orange-text tab-title">TOÁN 3</h3>
+                            </div>
+                            <div class="d-flex flex-center tab-left-item tab-item" 
+                                data-class-active="tab-left-active" data-class-access="tab-left-item" 
+                                data-active-content="physical" data-content-class-active="active-content"
                                 data-active-content-wrapper="tab-right-content">
                                 <span class="tab-left-icon"><img src="img/atom.png" /> </span>
                                 <h3 class="title deep-blue-text tab-title">VẬT LÝ</h3>

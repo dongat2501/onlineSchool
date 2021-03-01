@@ -491,6 +491,7 @@ img {
 
 .tab-row {
     position: relative;
+    cursor: pointer;
 }
 
 .tab-row::after {
@@ -547,6 +548,7 @@ img {
 
 .tab-body {
     padding: 40px 0;
+    display: none;
 }
 @media screen and (min-width: 768px) {
     .tab-body {
@@ -557,6 +559,10 @@ img {
     .tab-body {
         padding: 80px 0;
     }
+}
+
+.tab-body-active.tab-body {
+    display: block;
 }
 
 .deep-blue-text {
