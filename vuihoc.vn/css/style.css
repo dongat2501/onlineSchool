@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
 
 * {
     padding: 0;
@@ -17,6 +19,10 @@ html, body, p, input, h1, h2, h3, h4, h5 {
     font-family: 'Quicksand', sans-serif;
 }
 
+.roboto, .card-noti {
+    font-family: 'Roboto', sans-serif;
+}
+
 .lobster {
     font-family: 'Lobster', cursive;
 }
@@ -27,6 +33,10 @@ button {
 
 select:focus, button:focus, input:focus {
     outline: none;
+}
+
+a {
+    color: #111;
 }
 
 .white-bg {
@@ -240,7 +250,8 @@ select:focus, button:focus, input:focus {
     width: calc(100vw - 30px);
     max-width: 800px;
     padding:  25px 5px 5px 25px;
-    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 @media screen and (min-width: 1200px) {
     .nav-three {
@@ -252,18 +263,28 @@ select:focus, button:focus, input:focus {
     }
 }
 
-.tab-items.tab-active {
+.tab-colum-inner {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.tab-column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tab-column.tab-active {
     color: #FF660A;
 }
 
-.tab-items:hover .tab-name,
-.tab-items:hover i {
+.tab-column:hover .tab-name,
+.tab-column:hover i {
     color: #FF660A;
 }
 
-.tab-items:hover .nav-three,
-.tab-items.tab-active .nav-three {
-    display: block;
+.tab-column:hover .nav-three,
+.tab-column.tab-active .nav-three {
+    opacity: 1;
 }
 
 .app-shop {
@@ -297,6 +318,10 @@ img {
 
 .hero {
     margin-bottom: 10px;  
+}
+
+.hero-cta {
+    display: block;
 }
 
 .four-up {
@@ -713,7 +738,7 @@ img {
     background-image: none;
 }
 
-.three-up-column .card-two-img {
+.math-page .card-two-img {
     width: 45px;
     min-width: 45px;
     height: 45px;
@@ -728,7 +753,7 @@ img {
 }
 
 .card-noti {
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -772,6 +797,7 @@ img {
 
 .three-up-img {
     width: calc(100% - 80px);
+    max-width: 229px;
     margin: 0 auto 10px;
     display: block;
 }
@@ -810,13 +836,14 @@ img {
 .two-up-label {
     width: 102px;
     height: 47px;
-    padding: 8px;
+    padding: 5px 40px 8px 15px;
     position: absolute;
     background-image: url(../img/englishLabel.png);
     background-repeat: no-repeat;
     background-size: contain;
-    font-weight: 600;
-    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
     color: #fff;
     z-index: 2;
 }
@@ -1090,7 +1117,7 @@ img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid #FF6609;
+    border: 2px solid #FEB247;
   }
 
   .pangination {
@@ -1233,6 +1260,10 @@ img {
   .card-name {
       font-weight: 700;
       text-align: center;
+  }
+
+  .math-page .card-name {
+    text-align: left;
   }
 
   @media screen and (min-width: 1200px) {
