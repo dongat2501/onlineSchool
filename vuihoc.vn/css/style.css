@@ -1263,6 +1263,21 @@ img {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+    .icon-card {
+        margin: 0 auto 10px;
+    }
+    .card-two-row, .card-two-des {
+        text-align: center;
+    }
+    .card-item-row {
+        display: flex;
+    }
+    .bottom-price .flex-align-bottom {
+        justify-content: flex-end;
+    }
+}
+
 .icon-card-small {
     width: 40px;
     min-width: 40px;
